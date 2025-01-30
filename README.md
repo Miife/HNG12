@@ -9,18 +9,18 @@ To run this project locally, follow the steps below:
 ### Prerequisites
 1. Python 3.8 or later
 2. Clone the Repository  
-``` git clone https://github.com/Miife/HNG12.git ```
+``` git clone https://github.com/Miife/HNG12.git ```  
 ``` cd HNG12 ```
 
-3. Set Up Virtual Environment (optional but recommended)
-``` python -m venv NameOfVirtualenv ```
+3. Set Up Virtual Environment (optional but recommended)  
+``` python -m venv NameOfVirtualenv ```  
 On Windows, ``` NameOfVirtualenv\Scripts\activate ```
 
-4. Install Dependencies
+4. Install Dependencies  
 ``` pip install -r requirements.txt ```
 
-5. Run the Development Server
-``` python manage.py runserver ```
+5. Run the Development Server  
+``` python manage.py runserver ```  
 By default, the API will be accessible at http://localhost:8000/
 
 ## API Documentation
@@ -45,7 +45,7 @@ This endpoint accepts a GET request. No request body is required.
 - github_url: The user's GitHub URL.
 
 ### Example Usage
-To use the API, simply send a GET request to the following URL:
+To use the API, simply send a GET request to the following URL:  
 http://localhost:8000/
 
 The response will return the JSON format as shown above with the dynamically generated current UTC datetime.
