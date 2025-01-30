@@ -6,8 +6,7 @@ This project is a simple API designed to return specific details such as my emai
 ## Setup Instructions
 To run this project locally, follow the steps below:
 
-### Prerequisites
-1. Python 3.8 or later
+1. Make sure you have Python 3.8 or later
 2. Clone the Repository  
 ``` git clone https://github.com/Miife/HNG12.git ```  
 ``` cd HNG12 ```
@@ -25,7 +24,7 @@ By default, the API will be accessible at http://localhost:8000/
 
 ## API Documentation
 ### Endpoint URL
-GET /
+GET /  
 This endpoint is mapped to the root URL (/) and is associated with the my_info view function.
 
 
