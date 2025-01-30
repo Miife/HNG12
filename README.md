@@ -34,14 +34,14 @@ This endpoint accepts a GET request. No request body is required.
 ### Response Format (200 OK)
 ```
 {
-  "email": "your-email@example.com",
+  "email": "my-email@example.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/yourusername/your-repo"
+  "github_url": "https://github.com/myusername/my-repo"
 }
 ```
-- email: The user's email address.
+- email: My email address.
 - current_datetime: Dynamically generated UTC datetime in ISO 8601 format.
-- github_url: The user's GitHub URL.
+- github_url: My GitHub URL.
 
 ### Example Usage
 To use the API, simply send a GET request to the following URL:  
