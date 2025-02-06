@@ -6,7 +6,6 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'number_classification_api.settings')
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hng12.settings')
     try:
         from django.core.management import execute_from_command_line

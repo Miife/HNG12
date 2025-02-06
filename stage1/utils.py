@@ -11,7 +11,8 @@ def is_prime(n):
 
 def is_armstrong(n):
     """A function to check if a number is an Armstrong number."""
-    fig = [int(i) for i in str(n)]
+    absoltue_number = abs(n)
+    fig = [int(i) for i in str(absoltue_number)]
     return sum(i** len(fig) for i in fig) == n
 
 def is_perfect(n):
@@ -20,7 +21,11 @@ def is_perfect(n):
 
 def digit_sum(n):
     """A function to return the sum of digits."""
-    return sum(int(i) for i in str(n))
+    absoltue_number = abs(n)
+    result = sum(int(i) for i in str(absoltue_number))
+    if n<0:
+        result = -result
+    return result
 
 def fun_fact(n):
     """A function to fetch a fun fact from Numbers API."""
@@ -36,7 +41,7 @@ def fun_fact(n):
 def number_properties(n):
     """A funtion to return its properties"""
     properties = []
-    if is_armstrong(n):
+    if is_armstrong(abs(n)):
         properties.append("armstrong")
     properties.append("odd" if n%2 else "even")
     return {

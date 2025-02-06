@@ -10,16 +10,10 @@ def number_properties_api(request):
     number = request.GET.get("number")
 
     #validate input
-    if number is None or not number.lstrip('-').isdigit():
+    if number is None or not number.lstrip('-').isdigit() or (number[0]=='-' and len(number)==1):
         return JsonResponse({"number":number, "error":True}, json_dumps_params={"indent": 2}, status=400)
     
     number= int(number)
-    if number < 0:
-        return JsonResponse({
-            "number": number,
-            "error": False,
-            "message": "Negative numbers are not classified in this API"
-        }, json_dumps_params={"indent": 2}, status=200)
     result = number_properties(number)
 
     return JsonResponse(result, json_dumps_params={"indent": 2}, status=200)
